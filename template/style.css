@@ -44,7 +44,7 @@ a:hover{
     font-weight: bold;
 }
 .brand a:hover{
-    color: var(--primary-color);;
+    color: var(--primary-color);
 }
 .header-links a{
     text-decoration: none; /*removes the underline from the link*/
@@ -74,10 +74,11 @@ a:hover{
     flex-wrap: wrap;/*this will wrap the products automatically based on device if there are more products that the total device width*/
 }
 .products li{
-    list-style-type: none;
+    list-style-type: none;/*removes the default dot of li tag*/
     padding: 0;
-        /*flex grow 0 flex shrink 1 flex width 34rem*/
-    flex: 0 1 34rem;
+    /*flex grow 0(default) flex shrink 1 flex width 34rem, Make the third flex item not growable (0), let the li flex item shrink(default 1) as much as the other flex items:*/
+        /*grow shrink basis https://www.w3schools.com/css/css3_flexbox.asp*/
+    flex: 0 1 34rem;/*neither grow nor shrink always every li should always be 34rem width = 10px * 34 = 340px */
     margin: 1rem;
     height: 50rem;
     border-bottom: .1rem #c0c0c0 solid;
@@ -117,4 +118,7 @@ a:hover{
     background: none;
     color: #fff;
     cursor: pointer;
+}
+.sidebar{
+    
 }
