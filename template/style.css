@@ -1,4 +1,4 @@
-/*Alt + Shift + Down arrow -> duplicate line*/
+/*Alt + Shift + Down arrow -> duplicate line , https://www.youtube.com/watch?v=Fy9SdZLBTOo*/
 html{
     font-size: 62.5%; /* (default font size in browser is 16px)16px * 62.5 = 10px = 1rem - rem is good for different size of browsers*/
     box-sizing: border-box;/*helps us to style boxes(like div) in a better way by providing width, padding and margin(tw = w+p+b+m)*/
@@ -120,5 +120,7 @@ a:hover{
     cursor: pointer;
 }
 .sidebar{
-    
+    position: fixed;
+    width: 30rem;
+    transform: translateX(-30rem); /*
 }
