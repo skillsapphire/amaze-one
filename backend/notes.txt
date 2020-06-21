@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=Fy9SdZLBTOo
+Create backend node express server and api
+-----------------------------------------------
+npm init
+check video at 1hr 34 mins
+express will help us create a server and rest api endpoints
+babel will convert es6 to es5 as node only understands es5
+
+Below two lines are same:
+app.listen(5000, function(){console.log('Server started at http://localhost:5000');}); ES5
+app.listen(5000, () => {console.log('Server started at http://localhost:5000');}); ES6
+
+nodemon will identify and restart server
+
+.babelrec "@babel/preset-env" this setting will help us run project from terminal and run es6 code
+
+In package.json below command will make nodemon watch our backend folder and nodemon will only run server.js
+"start": "nodemon --watch backend --exec babel-node backend/server.js"
+-------------------------------------------------------------------
+Connect frontend with backend api with help of react hooks (1hr 39.30 mins)
+-------------------------------------------------------------------
+in package.json of frontend create a proxy with backend rest api url
+define a hook in homescreen.js of frontend

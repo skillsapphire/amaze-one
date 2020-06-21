@@ -1,0 +1,53 @@
+/*Product details*/
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /*for small screen we want to fall to new lines*/
+    padding: 1rem;
+}
+.details-image{
+    flex: 2 1 60rem;/*img should cover 2 of 4 column ans should shrink and occupy 60rem size*/
+}
+.details-image img{
+    max-width: 60rem;
+    width: 100%;
+}
+.details-info{
+    flex: 1 1 30rem;
+}
+.details-action{
+    flex: 1 1 30rem;
+}
+.details-info ul, .details-action ul{
+    list-style-type: none;
+    padding: 0;
+}
+.details-info li, .details-action li{
+    margin: 1rem;
+}
+.back{
+    padding: 1rem;
+}
+.details-action{
+    border: .1rem #808080 solid;
+    border-radius: .5rem;
+    background-color: #f8f8f8;
+    padding: 1rem;
+}
+.details-action ul li:last-child{/*selects the last li (which has button)*/
+    display: flex;
+    flex-direction: column; /*this will make this li to occupy full width*/
+}
+.button{/*styling the yellow button*/
+    padding: 1rem;
+    border: .1rem #808080 solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.button:hover{
+    border: .1rem #404040 solid;
+}
+.button.primary{
+    background-color: #f0c040;
+}

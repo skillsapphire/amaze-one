@@ -122,5 +122,24 @@ a:hover{
 .sidebar{
     position: fixed;
     width: 30rem;
-    transform: translateX(-30rem); /*
+    transform: translateX(-30rem); /*this will keep the sidebar out of the screen*/
+    background: #f0f0f0;
+    height: 100%;
+    transition: all .5s;
+}
+.open{
+    transform: translateX(0); /*when open class gets applied to the sidebar than sidebar will be shown to the user with translatex=0*/
+}
+.sidebar-close-button{
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0.1rem solid #000;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding: .5rem;
+    padding-top: .1rem;
+    position: absolute;/*this along with below style will position the cross button to right (as sidebar is position fixed*/
+    right: .5rem;
+    top: 1.5rem;
 }

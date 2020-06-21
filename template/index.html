@@ -10,7 +10,7 @@
     <div class="grid-container">
         <header class="header">
             <div class="brand">
-                <button>
+                <button onclick="openSidebar()">
                     &#9776; <!--Ascii code for hamburger menu-->
                 </button>
                 <a href="index.html">amazeone</a>
@@ -22,6 +22,7 @@
         </header>
         <aside class="sidebar">
             <h3>Shopping Categories</h3>
+            <button class="sidebar-close-button" onclick="closeSidebar()">x</button>
             <ul>
                 <li>
                     <a href="index.html">Shirts</a>
@@ -105,5 +106,13 @@
         </main>
         <footer class="footer">All rights reserved.</footer>
     </div>
+    <script type="text/javascript">
+        function openSidebar(){
+            document.querySelector(".sidebar").classList.add("open");/*selects sidebar and adds class open to it*/
+        }
+        function closeSidebar(){
+            document.querySelector(".sidebar").classList.remove("open");/*selects sidebar and adds class open to it*/
+        }
+    </script>
 </body>
 </html>
